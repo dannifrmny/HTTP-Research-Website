@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How HTTP Works</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>How HTTP Works</h1>
+    <p>Understanding communication between clients and servers.</p>
+</header>
+
+<!-- Main navigation -->
+<nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="history.html">History</a>
+    <a href="how-it-works.html">How HTTP Works</a>
+    <a href="concepts.html">Key Concepts</a>
+    <a href="references.html">References</a>
+    <a href="about.html">About Me</a>
+    <a href="quiz.html">Quiz</a>
+</nav>
+
+<main>
+    <section>
+        <h2>The Request-Response Cycle</h2>
+        <p>
+            HTTP follows a client-server model. A client,
+            such as a web browser, sends an HTTP request
+            to a server. The server processes the request
+            and returns an HTTP response.
+        </p>
+<figure>
+    <img src="http-diagram.png"
+         alt="Diagram showing an HTTP request from a client to a server and the response returning to the client"
+         class="http-diagram">
+    <figcaption>
+        Figure 1: HTTP Request-Response Cycle
+    </figcaption>
+</figure>
+
+
+        <ol>
+            <li>The user enters a URL into the browser.</li>
+            <li>The browser locates and connects to the server.</li>
+            <li>The browser sends an HTTP request.</li>
+            <li>The server processes the request.</li>
+            <li>The server returns an HTTP response.</li>
+            <li>The browser displays the received content.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Common HTTP Methods</h2>
+        <p>
+            HTTP methods specify the action a client
+            wants to perform on a resource.
+        </p>
+
+        <table>
+            <tr>
+                <th>Method</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td>GET</td>
+                <td>Retrieve a resource.</td>
+            </tr>
+            <tr>
+                <td>POST</td>
+                <td>Submit data to a server.</td>
+            </tr>
+            <tr>
+                <td>PUT</td>
+                <td>Create or replace a resource.</td>
+            </tr>
+            <tr>
+                <td>DELETE</td>
+                <td>Request removal of a resource.</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>HTTP Status Codes</h2>
+        <p>
+            HTTP responses include status codes that
+            indicate the result of a request.
+        </p>
+
+        <ul>
+            <li><strong>200 OK:</strong> Request succeeded.</li>
+            <li><strong>301 Moved Permanently:</strong> Resource has moved.</li>
+            <li><strong>404 Not Found:</strong> Resource was not found.</li>
+            <li><strong>500 Internal Server Error:</strong> Server encountered an error.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>HTTP vs. HTTPS</h2>
+        <p>
+            HTTPS uses HTTP over a secure connection
+            protected by TLS. Encryption helps protect
+            information exchanged between browsers and
+            servers from interception and modification.
+        </p>
+    </section>
+</main>
+
+<!-- Required course attribution -->
+<footer>
+    <p>IT 3203 Class Project | Kennesaw State University</p>
+    <a href="https://ksuweb.github.io/IT3203/">
+        Course Website
+    </a>
+</footer>
+
+</body>
+</html>
